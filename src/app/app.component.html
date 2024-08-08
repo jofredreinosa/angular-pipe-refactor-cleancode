@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="currency-pipe">
+    <p>
+      <label for="">
+        Dinero positivo CurrencyPipe:
+      </label>
+      {{ positiveMoneyAmount | currency : '' : '$' : '1.0-0' : 'es' }}
+    </p>
+    <p>
+      <label for="">
+        Dinero negativo CurrencyPipe:
+      </label>
+      {{ negativeMoneyAmount | currency : '' : '$' : '1.0-0' : 'es' }}
+    </p>
+  </div>
+
+  <div class="number-pipe">
+    <p>
+      <label for="">
+        Número positivo DecimalPipe:
+      </label>
+      {{ positiveAmount | number : '1.0-0' : 'es' }}
+    </p>
+    <p>
+      <label for="">
+        Número negativo DecimalPipe:
+      </label>
+      {{ negativeAmount | number : '1.0-0' : 'es' }}
+    </p>
+  </div>
+
+  <div class="custom-pipe">
+    <p>
+      <label for="">
+        Dinero positivo CustomPipe:
+      </label>
+      {{ positiveMoneyAmount | numberFormat : true}}
+    </p>
+    <p>
+      <label for="">
+        Dinero negativo CustomPipe:
+      </label>
+      {{ negativeMoneyAmount | numberFormat : true}}
+    </p>
+    <p>
+      <label for="">
+        Número positivo CustomPipe:
+      </label>
+      {{ positiveAmount | numberFormat  }}
+    </p>
+    <p>
+      <label for="">
+        Número negativo CustomPipe:
+      </label>
+      {{ negativeAmount | numberFormat }}
+    </p>
+  </div>
+</div>

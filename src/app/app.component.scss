@@ -1,0 +1,26 @@
+.container {
+  padding: 40px;
+  font-size: 20px;
+}
+
+.currency-pipe {
+  label {
+    color: blue;
+  }
+}
+
+.number-pipe {
+  margin-top: 40px;
+  label {
+    color: purple;
+  }
+}
+
+.custom-pipe {
+  margin-top: 40px;
+  label {
+    color: green;
+  }
+}
+
+
